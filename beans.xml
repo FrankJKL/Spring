@@ -1,0 +1,8 @@
+<beans>
+	<bean id="u" class="cn.kunlun.dao.impl.UserDaoImpl" />
+	<bean id="u2" class="cn.kunlun.dao.impl.UserDaoImpl2" />
+	<bean id="userServiceImpl" class="cn.kunlun.service.UserServiceImpl" >
+		<property name="userDAO" bean="u2"/>
+	</bean>
+	
+</beans>
